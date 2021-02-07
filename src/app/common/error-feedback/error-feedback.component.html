@@ -1,0 +1,5 @@
+<div *ngIf="submitted || control.touched ||  control.dirty">
+  <small class="text-danger" *ngIf="control.errors.required">
+    {{controlName}} is required
+  </small>
+</div>

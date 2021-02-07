@@ -9,6 +9,7 @@ import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MainComponent } from './common/main/main.component';
+import { ErrorFeedbackComponent } from './common/error-feedback/error-feedback.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,7 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     MainComponent,
+    ErrorFeedbackComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule, RouterModule.forRoot(routes)],
   providers: [],
