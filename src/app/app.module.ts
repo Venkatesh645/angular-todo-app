@@ -3,10 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MainComponent } from './common/main/main.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: LoginComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
+  },
+];
 
 @NgModule({
   declarations: [
@@ -14,20 +27,11 @@ import { FooterComponent } from './common/footer/footer.component';
     LoginComponent,
     RegisterComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponent,
   ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot([
-      {
-        path: 'login', component: LoginComponent
-      },
-      {
-        path: 'register', component: RegisterComponent
-      }
-    ])
-  ],
+  imports: [BrowserModule, ReactiveFormsModule, RouterModule.forRoot(routes)],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
