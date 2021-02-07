@@ -1,1 +1,26 @@
-<p>register works!</p>
+<div class="d-flex flex-column align-items-center" id="register-form-div">
+
+  <div class="text-center p-2 bg-secondary text-light w-25">
+    REGISTER
+  </div>
+
+  <form [formGroup]="registerForm" id="register-form" class="border p-4 w-25 bg-light">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email"
+        formControlName="email">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" id="password" class="form-control" placeholder="Password" formControlName="password">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Confirm password</label>
+      <input type="password" id="confirm-password" class="form-control" placeholder="Password" formControlName="password">
+    </div>
+
+    <button type="submit" class="btn btn-secondary btn-sm btn-block">Register</button>
+  </form>
+</div>

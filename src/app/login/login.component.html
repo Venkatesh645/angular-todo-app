@@ -1,10 +1,10 @@
 <div class="d-flex flex-column align-items-center" id="login-form-div">
 
-  <div class="text-center p-2 bg-dark text-light w-25">
+  <div class="text-center p-2 bg-secondary text-light w-25">
     LOGIN
   </div>
 
-  <form [formGroup]="loginForm" id="login-form" class="border p-4 w-25">
+  <form [formGroup]="loginForm" id="login-form" class="border p-4 w-25 bg-light">
     <div class="form-group">
       <label for="exampleInputEmail1">Email</label>
       <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email"
@@ -16,6 +16,6 @@
       <input type="password" id="password" class="form-control" placeholder="Password" formControlName="password">
     </div>
 
-    <button type="submit" class="btn btn-primary btn-sm btn-block">Login</button>
+    <button type="submit" class="btn btn-secondary btn-sm btn-block">Login</button>
   </form>
 </div>
