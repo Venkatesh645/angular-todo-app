@@ -1,0 +1,20 @@
+.search-div {
+  position: relative;
+}
+
+.search-div .icon {
+  position: absolute;
+  right: 0.5em;
+}
+
+.profile-name{
+border: none;
+background-color: inherit;
+color: white;
+}
+
+.profile-name option {
+  color: black;
+  border: none;
+  padding: 2em;
+}

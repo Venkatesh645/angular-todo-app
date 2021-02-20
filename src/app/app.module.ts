@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RegisterComponent } from './components/register/register.component';
 import { HeaderComponent } from './components/common/header/header.component';
 import { FooterComponent } from './components/common/footer/footer.component';
@@ -32,7 +33,7 @@ const routes: Routes = [
     MainComponent,
     ErrorFeedbackComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, ReactiveFormsModule, RouterModule.forRoot(routes), FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
